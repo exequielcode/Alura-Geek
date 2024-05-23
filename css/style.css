@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: url(/img/banner.jpg);
+    padding: 20px 0;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+h1{
+    font-family: "Anta", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+h1:hover{
+    color: rgb(224, 25, 92);
+}
+/*---------B O D Y---------------*/
+
+body{
+    background: rgb(235, 189, 146);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*------------------------*/
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*---------A G R E G A R  P R O D U C T O---------------*/
+.agregarProducto{
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: center;
+
+}
+.agregarProducto h2{
+    font-weight: bold;
+    font-family: "Anta", sans-serif; 
+    font-size: 25px;
+    color: rgb(167, 10, 167);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*------------B O T O N E S ENVIAR & ELIMINAR-------*/
+
+form input{
+    border: 3px solid rgb(159, 24, 163);
+    color: rgb(255, 0, 140);
+    border-radius: 25px 25px 30px 30px;
+    padding: 15px;
+    outline: none;
+}
+
+form input::placeholder{
+    font-family: "Anta", sans-serif; 
+    font-size: 16px;
+    color: #4a038c;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+}
+
+.botones button,
+.botones input{
+    padding: 10px 30px;
+    border: 3px solid #4a038c;
+    border-radius: 15px;
+    width: 100%;
+    font-family: "Anta", sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ad33ad;
+}
+
+.botones button:hover{
+    border-color: rgb(255, 0, 191);
+}
+.botones button:active{
+    background-color:  #4033b6;
+}
+.botones input{
+    color: #FFFFFF;
+    background-color: #1d87a1;
+    border-color: blue;
+}
+.botones input:hover{ 
+    border-color: rgb(255, 0, 191);
+}
+.botones input:active{ /*cambia el color de adentro del boton Enviar al recibir el click*/
+    background-color: rgb(34, 66, 250);
+}
+
+/*--------------P R O D U C T O S-------------------------*/
+.productos{
+    padding: 40px;
+}
+
+.container-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0px;
+    overflow-x: auto;
+}
+
+.productos-titulo{
+    font-weight: bold;  
+    font-family: "Anta", sans-serif;
+    text-align: center;
+    font-size: 25px; 
+    color: rgb(192, 14, 118); 
+}
+
+.lista-productos{
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.lista-productos::after{
+    content: "";
+    /* Agrega un pseudo-elemento vacio*/
+    flex-shrink: 0;
+    /*evita que el pseudo-elemento afecte el tamanio de los productos*/
+    width: 6px;
+    /* Ancho del espacio adicional, similar que padding-right*/
+}
+
+.productos-item{
+    width: 180px;
+    height: 320px;
+    padding: 20px;
+    border: 2px #c485ff solid; 
+    border-radius: 15px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(53, 14, 192); 
+    flex: 0 0 auto;    
+}
+.productos-item:hover{
+    border-color: rgb(172, 12, 111); /*cambia el color del BORDE de los items*/
+}
+
+
+
+.productos-img{
+    border: 0px rgb(39, 9, 32) solid; 
+    width: 100%;
+    border-radius: 15px;
+}
+
+.productos-nombre{
+    text-align: center;
+    font-family: "Anta", sans-serif; 
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.productos-nombre:hover{ 
+    color: #5545e2;
+}
+
+.productos-item div{
+    margin-top: auto;
+}
+
+.productos-precio{
+    font-family: "Anta", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.productos-item div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trash{
+    height: 25px;
+    cursor: pointer;
+}
+
+/*--------------F O O T E R-------------------------*/
+
+footer{
+    text-align: center;
+    background: url(/img/footer-azul.jpg);
+    padding: 35px;
+}
+.logo-footer {
+    width: 80px; /* Cambia esto al ancho deseado */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+
+}
+
+.copyright{
+    font-family: "Anta", sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 13px;
+}
+.copyright:hover{
+    color: rgb(10, 137, 255);
+}
+/*----------------------R E S P O N S I V E--------------------------*/
+
+
+@media (min-width: 640px) {
+
+    .agregarProducto form input,
+    .agregarProducto form input::placeholder {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    main {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .lista-productos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-productos::after {
+        display: none;
+    }
+
+    .productos-nombre,
+    .productos-precio {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    main {
+        justify-content: center;
+        gap: 100px;
+    }
+
+}

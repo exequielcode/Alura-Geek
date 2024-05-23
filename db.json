@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "nombre": "Monika DDLC Nendoroid",
+      "precio": "3000",
+      "imagen": "https://m.media-amazon.com/images/I/51UnQ0ZjOWL._AC_UF894,1000_QL80_.jpg",
+      "id": 1
+    },
+    {
+      "nombre": "Yuri DDLC Nendoid",
+      "precio": "3500",
+      "imagen": "https://images.goodsmile.info/cgm/images/product/20231003/15045/121833/large/75afd6e06b263f285cb26ca7ec46e2b9.jpg",
+      "id": 3
+    },
+    {
+      "nombre": "Sayori DDLC Nendoroid",
+      "precio": "3000",
+      "imagen": "https://images.goodsmile.info/cgm/images/product/20230925/15014/121519/large/8872cdf45301104c7ebabada34ffbd53.jpg",
+      "id": 4
+    },
+    {
+      "nombre": "Haru Blue Archive Nendoroid",
+      "precio": "4555",
+      "imagen": "https://solarisjapan.com/cdn/shop/files/90f7556a-0869-11ef-9821-0242ac120004.jpg?v=1714643555&width=900",
+      "id": 5
+    },
+    {
+      "nombre": "Kurumi Nendoroid",
+      "precio": "2333",
+      "imagen": "https://i.ebayimg.com/images/g/NqYAAOSw3g9hkhCB/s-l400.jpg",
+      "id": 6
+    },
+    {
+      "nombre": "Bochi The Rock Nendoroid",
+      "precio": "3450",
+      "imagen": "https://d22fxaf9t8d39k.cloudfront.net/3d989cbf7035bbb2538758f408d04042fb601a0fe54c101cb08445470ac11a58197132.jpg",
+      "id": 8
+    },
+    {
+      "nombre": "Needy Girl Overdose Nendoroid",
+      "precio": "4500",
+      "imagen": "https://i0.wp.com/criticalhit.com.au/wp-content/uploads/2023/07/00090175556_08.jpg?resize=500%2C571&ssl=1",
+      "id": 9
+    }
+  ]
+}

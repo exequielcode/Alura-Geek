@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Alura Geek</h1>
+    </header>
+
+    <main>
+        <!---------------------------------------------Agregar Productos----------------------------------------->
+        <section class="agregarProducto">
+            <h2>Agregar Producto</h2>
+
+            <form action="" data-formulario>
+                <input type="text" placeholder="nombre..." minlength="3" maxlength="30" required data-nombre>
+                <input type="number" placeholder="precio..." min="1" maxlength="7" required data-precio>
+                <input type="text" placeholder="imagen..." required data-imagen>
+                <div class="botones">
+                    <input type="submit" value="Enviar">
+                    <button type="button" class="limpiar-input">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
+
+
+
+
+
+       <!---------------------------------------------Seccion Productos----------------------------------------->
+        <section class="productos">
+            <h2 class="productos-titulo">Mis Productos</h2>
+            <div class="container-productos">
+                <section class="lista-productos" data-lista>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!--------------F O O T E R------------------------->
+
+    <footer>
+        <img class="logo-footer" src="img/logo-blanco.png" alt="">
+        <p class="copyright"> ©️ Copyright   ﾟ۝｡ Exequiel Sotelo- 2024</p>
+    </footer>
+    <script src="/js/mostrarProductos.js" type="module"></script>
+    <script src="/js/crearProducto.js" type="module"></script>
+</body>
+</html>
